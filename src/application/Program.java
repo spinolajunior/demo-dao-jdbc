@@ -32,5 +32,13 @@ public class Program {
         sellerDao.insert(seller);
         System.out.printf("Done seller: %s cadastred on id: %d",seller.getName(),seller.getId());
 
+        System.out.println("\n=== TEST 5 : insert ===");
+        seller = sellerDao.findById(1);
+        seller.setName("Teste");
+        sellerDao.update(seller);
+
+        System.out.println("\n=== TEST 5 : deleteByID ===");
+        sellerDao.deleteById(17);
+
     }
 }
