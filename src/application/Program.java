@@ -10,7 +10,7 @@ import java.util.Date;
 
 public class Program {
     public static void main(String[] args) {
-
+        System.out.println("=== TEST 1 : fileById ===");
         SellerDao sellerDao = FactoryDao.createSellerDao();
         Seller obj = sellerDao.findById(1);
         System.out.println(obj);
